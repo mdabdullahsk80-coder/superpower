@@ -1,48 +1,216 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>SUPER POWER TECHNOLOGY</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{font-family:Arial;background:#0b1a3a;color:white;text-align:center;}
-header{background:#001f5b;padding:20px;}
-h1{color:yellow;}
-section{padding:20px;}
-.product{background:#132a63;margin:10px;padding:10px;border-radius:8px;}
-footer{background:#001f5b;padding:10px;margin-top:20px;}
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b1a3a;
+color:white;
+}
+
+header{
+background:#001f5b;
+padding:15px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+width:60px;
+margin-right:10px;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+background:#132a63;
+}
+
+.hero h1{
+color:yellow;
+}
+
+.products{
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+}
+
+.card{
+background:#132a63;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.order{
+background:green;
+color:white;
+padding:8px 12px;
+text-decoration:none;
+border-radius:6px;
+display:inline-block;
+}
+
+.contact{
+padding:30px;
+text-align:center;
+background:#132a63;
+}
+
+footer{
+text-align:center;
+background:#001f5b;
+padding:10px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>SUPER POWER TECHNOLOGY</h1>
-<p>Quality Electrical Products Supplier</p>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<b>SUPER POWER</b>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
 </header>
 
-<section>
-<h2>Our Products</h2>
+<div class="hero">
 
-<div class="product">LED Light</div>
-<div class="product">Switch</div>
-<div class="product">Socket</div>
-<div class="product">Fan</div>
-<div class="product">Multi Plug</div>
-<div class="product">Holder</div>
-<div class="product">Button Holder</div>
-<div class="product">Electrical Wire</div>
-<div class="product">Different Types of Locks</div>
+<h1>SUPER POWER TECHNOLOGY</h1>
 
-</section>
+<p>Quality Electrical Products Supplier</p>
 
-<section>
-<h2>Contact</h2>
+</div>
+
+<h2 style="text-align:center;" id="products">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="led.jpg">
+<h3>LED Light</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="switch.jpg">
+<h3>Switch</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="socket.jpg">
+<h3>Socket</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="fan.jpg">
+<h3>Fan</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="multiplug.jpg">
+<h3>Multi Plug</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="holder.jpg">
+<h3>Holder</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="wire.jpg">
+<h3>Electrical Wire</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+<div class="card">
+<img src="lock.jpg">
+<h3>Locks</h3>
+<a class="order" href="https://wa.me/8801836082847">Order</a>
+</div>
+
+</div>
+
+<div class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
 <p>Phone: 01836082847</p>
-<p>WhatsApp: 01836082847</p>
-</section>
+
+<a class="order" href="https://wa.me/8801836082847">Chat on WhatsApp</a>
+
+<br><br>
+
+<p>Our Location</p>
+
+<iframe
+width="100%"
+height="200"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://maps.google.com/maps?q=bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
 
 <footer>
+
 <p>© 2026 SUPER POWER TECHNOLOGY</p>
+
 </footer>
 
 </body>
+
 </html>
