@@ -1,217 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <title>SUPER POWER TECHNOLOGY</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#0b1a3a;
-color:white;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1a3a;
+    color: white;
 }
-
-header{
-background:#001f5b;
-padding:15px;
-display:flex;
-align-items:center;
-justify-content:space-between;
+header {
+    background: #001f5b;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
-.logo{
-display:flex;
-align-items:center;
+.logo {
+    display: flex;
+    align-items: center;
 }
-
-.logo img{
-width:60px;
-margin-right:10px;
+/* লোগোর সাইজ ঠিক করার জন্য */
+.logo img {
+    height: 50px; /* লোগোর উচ্চতা */
+    width: auto;
+    margin-right: 10px;
 }
-
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-.hero{
-text-align:center;
-padding:40px 20px;
-background:#132a63;
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #132a63;
 }
-
-.hero h1{
-color:yellow;
+.hero h1 {
+    color: yellow;
 }
-
-.products{
-padding:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:15px;
+.products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
 }
-
-.card{
-background:#132a63;
-padding:10px;
-border-radius:10px;
-text-align:center;
+.card {
+    background: #132a63;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
 }
-
-.card img{
-width:100%;
-border-radius:8px;
+.card:hover {
+    transform: translateY(-5px);
 }
-
-.card h3{
-margin:10px 0;
+/* পণ্যের ছবির সাইজ ঠিক রাখার জন্য */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-
-.order{
-background:green;
-color:white;
-padding:8px 12px;
-text-decoration:none;
-border-radius:6px;
-display:inline-block;
+.card h3 {
+    margin: 10px 0;
 }
-
-.contact{
-padding:30px;
-text-align:center;
-background:#132a63;
+.order {
+    background: green;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
 }
-
-footer{
-text-align:center;
-background:#001f5b;
-padding:10px;
+.contact {
+    padding: 30px;
+    text-align: center;
+    background: #132a63;
 }
-
+footer {
+    text-align: center;
+    background: #001f5b;
+    padding: 15px;
+}
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">
-
-<img src="logo.png">
-
-<b>SUPER POWER</b>
-
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
+    <div class="logo">
+        <img src="logo.jpg" alt="Super Power Logo">
+        <b>SUPER POWER</b>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <div class="hero">
-
-<h1>SUPER POWER TECHNOLOGY</h1>
-
-<p>Quality Electrical Products Supplier</p>
-
+    <h1>SUPER POWER TECHNOLOGY</h1>
+    <p>Quality Electrical Products Supplier</p>
 </div>
 
-<h2 style="text-align:center;" id="products">Our Products</h2>
+<h2 style="text-align:center; margin-top: 30px;" id="products">Our Products</h2>
 
 <div class="products">
+    <div class="card">
+        <img src="led.jpg" alt="LED Light">
+        <h3>LED Light</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="led.jpg">
-<h3>LED Light</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="switch.jpg" alt="Switch">
+        <h3>Switch</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="switch.jpg">
-<h3>Switch</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="socket.jpg" alt="Socket">
+        <h3>Socket</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="socket.jpg">
-<h3>Socket</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="fan.jpg" alt="Fan">
+        <h3>Fan</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="fan.jpg">
-<h3>Fan</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="multiplug.jpg" alt="Multi Plug">
+        <h3>Multi Plug</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="multiplug.jpg">
-<h3>Multi Plug</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="holder.jpg" alt="Holder">
+        <h3>Holder</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="holder.jpg">
-<h3>Holder</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
+    <div class="card">
+        <img src="wire.jpg" alt="Electrical Wire">
+        <h3>Electrical Wire</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 
-<div class="card">
-<img src="wire.jpg">
-<h3>Electrical Wire</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
-
-<div class="card">
-<img src="lock.jpg">
-<h3>Locks</h3>
-<a class="order" href="https://wa.me/8801836082847">Order</a>
-</div>
-
+    <div class="card">
+        <img src="lock.jpg" alt="Locks">
+        <h3>Locks</h3>
+        <a class="order" href="https://wa.me/8801836082847">Order</a>
+    </div>
 </div>
 
 <div class="contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>Phone: 01836082847</p>
-
-<a class="order" href="https://wa.me/8801836082847">Chat on WhatsApp</a>
-
-<br><br>
-
-<p>Our Location</p>
-
-<iframe
-width="100%"
-height="200"
-style="border:0"
-loading="lazy"
-allowfullscreen
-src="https://maps.google.com/maps?q=bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
+    <h2>Contact Us</h2>
+    <p>Phone: 01836082847</p>
+    <a class="order" href="https://wa.me/8801836082847">Chat on WhatsApp</a>
+    <br><br>
+    <p>Our Location</p>
+    <iframe width="100%" height="200" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.433290618037!2d90.4125!3d23.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85848f2a08f%3A0x67396658097d7698!2sDhaka!5e0!3m2!1sen!2sbd!4v1700000000000"></iframe>
 </div>
 
 <footer>
-
-<p>© 2026 SUPER POWER TECHNOLOGY</p>
-
+    <p>© 2026 SUPER POWER TECHNOLOGY</p>
 </footer>
 
 </body>
-
-</html>
-
+                   </html>
